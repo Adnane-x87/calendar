@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 10px;
+            display: inline-block;
+            vertical-align: top;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+
+        td:hover {
+            background-color: #f1f1f1;
+            cursor: pointer;
+        }
+
+        .month-title {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 1.2em;
+            padding: 10px;
+        }
+
+        .day-header {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .empty-cell {
+            background-color: #f4f4f9;
+            border: none;
+        }
+
+        .current-day {
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 50%;
+        }
+
+        .calendar-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .calendar-container table {
+            margin: 10px;
+        }
+
+        .calendar-container th, .calendar-container td {
+            min-width: 30px;
+            height: 30px;
+        }
+
+        .calendar-container th {
+            font-size: 0.9em;
+        }
+
+        .calendar-container td {
+            font-size: 0.85em;
+        }
+
+        .calendar-container .month-title {
+            font-size: 1.1em;
+        }
+
+        .calendar-container .day-header {
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Calendar</h1></center>
+    <div class="calendar-container">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="7" class="month-title">January</th>
+                </tr>
+                <tr class="day-header">
+                    <th>Su</th>
+                    <th>M</th>
+                    <th>Tu</th>
+                    <th>W</th>
+                    <th>Th</th>
+                    <th>F</th>
+                    <th>Sa</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="empty-cell"></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                    <td class="empty-cell"></td>
+                    <td class="empty-cell"></td>
+                    <td class="empty-cell"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Repeat the above table structure for each month -->
+
+    </div>
+</body>
+</html>
